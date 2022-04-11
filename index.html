@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zecurion</title>
+	<link rel="preload" href="fonts/open-sans-v28-latin-regular.woff" as="font">
+	<link rel="preload" href="fonts/open-sans-v28-latin-regular.woff2" as="font">
+	<link rel="preload" href="fonts/open-sans-v28-latin-600.woff" as="font">
+	<link rel="preload" href="fonts/open-sans-v28-latin-600.woff2" as="font">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="page__body wrapper">
+
+	<header class="page-header">
+		<div class="page-header__top-block">
+			<div class="page-header__logo-block">
+				<a class="page-header__logo-link" href="#">
+					<img class="page-header__logo-img" src="img/logo.svg" width="230" height="51" alt="Логотип">
+				</a>
+			</div>
+
+			<div class="page-header__user-block user-block">
+				<div class="user-block__img-block">
+					<img class="user-block__img-man" src="img/man.svg" width="13" height="15" alt="Изображение человечка">
+				</div>
+				<div class="user-block__name-block">
+					<span>Имя Фамилия</span>
+				</div>
+				<div class="user-block__exit-block">
+					<img class="user-block__img-exit" src="img/exit.svg" width="15" height="15" alt="Выйти из профиля">
+				</div>
+			</div>
+		</div>
+
+		<div class="page-header__bottom-block">
+			<ol class="age-header__breadcrumb header__breadcrumb">
+				<li class="breadcrumb__item"><a href="#">Сотрудники</a></li>
+				<li class="breadcrumb__item breadcrumb__item--active">Виктория Беляева, belyeva@companyname</li>
+			</ol>
+		</div>
+	</header>
+
+	<main class="page-main">
+		<h1 class="visually-hidden">Сотрудники</h1>
+
+		<section class="page-main__left-section">
+			<h2 class="visually-hidden">Список сотрудников выбранного подразделения</h2>
+
+			<form class="search-form" method="get">
+				<button class="search-form__button" type="submit"><span class="visually-hidden">Поиск</span></button>
+				<input class="search-form__input" type="search" placeholder="Быстрый поиск...">
+			</form>
+
+			<div class="user-item">
+				<img class="user-item__img" src="img/user_anna.jpg">
+				<div class="user-item__info user-info">
+					<p class="user-info__name">Анна Иванова</p>
+					<p class="user-info__position">Менеджер, Отдел продаж</p>
+					<p class="user-info__status user-info__status--red">На увольнении</p>
+				</div>
+				<p class="user-item__number">12</p>
+			</div>
+
+			<div class="user-item user-item--active">
+				<img class="user-item__img" src="img/user_vika.jpg">
+				<div class="user-item__info user-info">
+					<p class="user-info__name">Виктория Беляева</p>
+					<p class="user-info__position">Менеджер, Отдел продаж</p>
+					<p class="user-info__status user-info__status--green">В отпуске</p>
+				</div>
+				<p class="user-item__number">274</p>
+			</div>
+
+			<div class="user-item">
+				<img class="user-item__img" src="img/user_viktor.jpg">
+				<div class="user-item__info user-info">
+					<p class="user-info__name">Виктор Сурков</p>
+					<p class="user-info__position">Менеджер, Отдел продаж</p>
+				</div>
+				<p class="user-item__number">0</p>
+			</div>
+		</section>
+
+		<section class="page-main__right-section">
+			<h2 class="visually-hidden">Информация о выбранном сотруднике</h2>
+
+			<section class="person">
+				<div class="person__left-block">
+					<img class="person__img" src="img/user_vika.jpg">
+					<div class="person__info">
+						<p class="person__name">Виктория Беляева</p>
+						<p class="person__position">Менеджер, Отдел продаж</p>
+					</div>
+				</div>
+
+				<div class="person__right-block analytics">
+					<div class="analytics__top-block">
+						<div class="analytics__activity">
+							<span class="analytics__text">Последняя активность</span>
+							<span class="analytics__last-visit">Сегодня в 12:22</span>
+						</div>
+						<div class="analytics__back">
+							<a class="analytics__link" href="#">к списку сотрудников</a>
+						</div>
+					</div>
+
+					<div class="analytics__bottom-block">
+						<div class="analytics__item analytics-item">
+							<h3 class="analytics-item__title">Уровень риска</h3>
+							<div class="analytics-item__numbers">
+								<p class="analytics-item__total">157</p>
+								<p class="analytics-item__delta">-100%</p>
+							</div>
+						</div>
+
+						<div class="analytics__item analytics-item">
+							<h3 class="analytics-item__title">Продуктивность</h3>
+							<div class="analytics-item__numbers">
+								<p class="analytics-item__total">86%</p>
+								<p class="analytics-item__delta">+3%</p>
+							</div>
+						</div>
+
+						<div class="analytics__item analytics-item">
+							<h3 class="analytics-item__title">Индекс активности</h3>
+							<div class="analytics-item__numbers">
+								<p class="analytics-item__total">2.4%</p>
+								<p class="analytics-item__delta">+14%</p>
+							</div>
+						</div>
+
+						<ul class="analytics__item analytics-links">
+							<li class="analytics-links__item">
+								<img class="analytics-links__img" src="img/selected.svg" width="17" height="16" alt="Выбран">
+							</li>
+							<li class="analytics-links__item">
+								<img class="analytics-links__img" src="img/video.svg" width="19" height="13" alt="Видеозвонок возможен">
+							</li>
+							<li class="analytics-links__item">
+								<img class="analytics-links__img" src="img/online.svg" width="22" height="17" alt="Сейчас онлайн">
+							</li>
+							<li class="analytics-links__item">
+								<img class="analytics-links__img" src="img/add.svg" width="21" height="19" alt="Найти другого сотрудника">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="anomalies">
+				<h2 class="section-title">Аномалии</h2>
+
+				<ul class="anomalies__list">
+					<li class="anomalies__item">Использование более одного аккаунта в соцсетях или мессенджерах</li>
+					<li class="anomalies__item">Первое использование устройства</li>
+					<li class="anomalies__item">Отсутствие более 40 дней</li>
+				</ul>
+			</section>
+			
+			<section class="indicators">
+				<h2 class="section-title">Основные показатели</h2>
+				<div class="indicators__list indicators__list--empty">
+					<p class="indicators__text indicators__text--empty">Данные не найдены</p>
+				</div>
+			</section>
+
+		</section>
+	</main>
+</body>
+
+</html>
