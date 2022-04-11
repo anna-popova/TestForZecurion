@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body class="page__body wrapper">
+<body class="page__body">
 
 	<header class="page-header">
 		<div class="page-header__top-block">
@@ -24,13 +24,13 @@
 			</div>
 
 			<div class="page-header__user-block user-block">
-				<div class="user-block__img-block">
+				<div class="user-block__item user-block__item--img">
 					<img class="user-block__img-man" src="img/man.svg" width="13" height="15" alt="Изображение человечка">
 				</div>
-				<div class="user-block__name-block">
+				<div class="user-block__item user-block__item--name">
 					<span>Имя Фамилия</span>
 				</div>
-				<div class="user-block__exit-block">
+				<div class="user-block__item user-block__item--exit">
 					<img class="user-block__img-exit" src="img/exit.svg" width="15" height="15" alt="Выйти из профиля">
 				</div>
 			</div>
@@ -38,8 +38,9 @@
 
 		<div class="page-header__bottom-block">
 			<ol class="age-header__breadcrumb header__breadcrumb">
-				<li class="breadcrumb__item"><a href="#">Сотрудники</a></li>
-				<li class="breadcrumb__item breadcrumb__item--active">Виктория Беляева, belyeva@companyname</li>
+				<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Сотрудники</a></li>
+				<li class="breadcrumb__item breadcrumb__item--active">Виктория Беляева,
+					<a href="mailto:belyeva@companyname">belyeva@companyname</a></li>
 			</ol>
 		</div>
 	</header>
@@ -60,19 +61,19 @@
 				<div class="user-item__info user-info">
 					<p class="user-info__name">Анна Иванова</p>
 					<p class="user-info__position">Менеджер, Отдел продаж</p>
-					<p class="user-info__status user-info__status--red">На увольнении</p>
+					<p class="user-info__status user-info__status--red">на увольнении</p>
 				</div>
 				<p class="user-item__number">12</p>
 			</div>
 
 			<div class="user-item user-item--active">
-				<img class="user-item__img" src="img/user_vika.jpg">
+				<img class="user-item__img user-item__img--active" src="img/user_vika.jpg">
 				<div class="user-item__info user-info">
-					<p class="user-info__name">Виктория Беляева</p>
-					<p class="user-info__position">Менеджер, Отдел продаж</p>
-					<p class="user-info__status user-info__status--green">В отпуске</p>
+					<p class="user-info__name user-info__name--active">Виктория Беляева</p>
+					<p class="user-info__position user-info__position--active">Менеджер, Отдел продаж</p>
+					<p class="user-info__status user-info__status--active user-info__status--green">в отпуске</p>
 				</div>
-				<p class="user-item__number">274</p>
+				<p class="user-item__number user-item__number--active">247</p>
 			</div>
 
 			<div class="user-item">
@@ -165,6 +166,107 @@
 				<h2 class="section-title">Основные показатели</h2>
 				<div class="indicators__list indicators__list--empty">
 					<p class="indicators__text indicators__text--empty">Данные не найдены</p>
+				</div>
+			</section>
+
+			<section class="statistics">
+				<div class="statistics__apps apps">
+					<h2 class="section-title">Приложение и категории</h2>
+
+					<table class="statistics__table">
+						<tbody>
+							<tr class="statistics__row">
+								<th class="statistics__header">Категории и приложения</th>
+								<th class="statistics__header">время</th>
+								<th class="statistics__header">%</th>
+								<th class="statistics__header">рост</th>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">Мессенджеры</td>
+								<td class="statistics__data statistics__data--time">20:55</td>
+								<td class="statistics__data statistics__data--text">18</td>
+								<td class="statistics__data statistics__data--text">+2%</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">Браузеры</td>
+								<td class="statistics__data statistics__data--time">15:11</td>
+								<td class="statistics__data statistics__data--text">12</td>
+								<td class="statistics__data statistics__data--text">-3%</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">Игры</td>
+								<td class="statistics__data statistics__data--time">13:11</td>
+								<td class="statistics__data statistics__data--text">7</td>
+								<td class="statistics__data statistics__data--text">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="statistics__websites websites">
+					<h2 class="section-title">Сайты и категории</h2>
+
+					<table class="statistics__table">
+						<tbody>
+							<tr class="statistics__row">
+								<th class="statistics__header">Категории сайтов</th>
+								<th class="statistics__header">время</th>
+								<th class="statistics__header">%</th>
+								<th class="statistics__header">рост</th>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">Поисковики</td>
+								<td class="statistics__data statistics__data--time">20:55</td>
+								<td class="statistics__data statistics__data--text">18</td>
+								<td class="statistics__data statistics__data--text">+2%</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">Новостные порталы</td>
+								<td class="statistics__data statistics__data--time">15:11</td>
+								<td class="statistics__data statistics__data--text">12</td>
+								<td class="statistics__data statistics__data--text">-3%</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text statistics__data--overflow">Сайты с неопределенным наполнением</td>
+								<td class="statistics__data statistics__data--time">13:11</td>
+								<td class="statistics__data statistics__data--text">7</td>
+								<td class="statistics__data statistics__data--text">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="statistics__discipline discipline">
+					<h2 class="section-title">Дисциплина</h2>
+
+					<table class="statistics__table">
+						<tbody>
+							<tr class="statistics__row">
+								<th class="statistics__header">Дата</th>
+								<th class="statistics__header">Приход на работу</th>
+								<th class="statistics__header">Уход с работы</th>
+								<th class="statistics__header">Время на работе</th>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">29.02</td>
+								<td class="statistics__data statistics__data--time">08:46</td>
+								<td class="statistics__data statistics__data--text">08:27</td>
+								<td class="statistics__data statistics__data--text">09:06</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">28.02</td>
+								<td class="statistics__data statistics__data--time">08:27</td>
+								<td class="statistics__data statistics__data--text">08:27</td>
+								<td class="statistics__data statistics__data--text">08:36</td>
+							</tr>
+							<tr class="statistics__row">
+								<td class="statistics__data statistics__data--text">25.02</td>
+								<td class="statistics__data statistics__data--time">08:42</td>
+								<td class="statistics__data statistics__data--text">08:42</td>
+								<td class="statistics__data statistics__data--text">08:36</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</section>
 
