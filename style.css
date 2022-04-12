@@ -541,17 +541,44 @@ img {
 .statistics__row {
 }
 .statistics__header {
+	padding-bottom: 4px;
 	text-align: left;
 	border-bottom: 1px solid #D1CFD7;
 }
 .statistics__header--right {
 	text-align: right;
 }
+.statistics__header--center {
+	text-align: center;
+}
 .first-column {
 	width: 187px;
 }
 .statistics__data {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: 400;
 	border-bottom: 1px solid #D1CFD7;
+}
+.statistics__data--dot {
+	position: relative;
+	padding-left: 20px;
+}
+.statistics__data--dot::before {
+	content: "";
+	position: absolute;
+	top: calc(50% - 5px);
+	left: 0;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #F8D77F;
+}
+.statistics__data--dot-red::before {
+	background-color: #F689A8;
+}
+.statistics__data--dot-green::before {
+	background-color: #A6C8B3;
 }
 .statistics__data--text {
 }
@@ -559,6 +586,7 @@ img {
 	text-align: right;
 }
 .statistics__data--time {
+	color: #058DC7;
 }
 .websites {
 }
