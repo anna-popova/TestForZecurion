@@ -455,49 +455,118 @@ img {
 }
 .analytics-links__img {
 }
+.wrapper {
+	padding-left: 31px;
+}
 .anomalies {
+	padding-right: 55px;
+	margin-bottom: 73px;
 }
 .section-title {
+	font-weight: 400;
+	text-transform: uppercase;
 }
 .anomalies__list {
+	display: flex;
+	justify-content: space-between;
 }
 .anomalies__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 33%;
+	max-width: 404px;
+	margin-right: 21px;
+	border: 1px solid #EE144E;
+	padding: 20px 20px 20px 40px;
+}
+.anomalies__item:last-child {
+	margin-right: 0;
+}
+.anomalies__item::before {
+	content: "";
+	position: absolute;
+	top: calc(50% - 7px);
+	left: 12px;
+	display: block;
+	width: 15px;
+	height: 14px;
+	background: url("img/attention.svg") no-repeat center center;
 }
 .indicators {
+	padding-right: 20px;
+	margin-bottom: 20px;
 }
 .indicators__list {
 }
 .indicators__list--empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 195px;
+	background-color: #F3F2F2;
 }
 .indicators__text {
+	font-weight: 400;
+	color: #989898;
 }
 .indicators__text--empty {
 }
 .statistics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 55px;
 }
-.statistics__apps {
+.statistics__item {
+	width: 33%;
+	max-width: 352px;
+	margin-right: 20px;
+}
+.statistics__item:last-child {
+	margin-right: 0;
+}
+.statistics__item--apps {
+}
+.statistics__item--websites {
+}
+.statistics__item--discipline {
 }
 .apps {
 }
 .statistics__table {
+	width: 100%;
+	margin-top: 20px;
 }
 .statistics__row {
 }
 .statistics__header {
+	text-align: left;
+	border-bottom: 1px solid #D1CFD7;
+}
+.statistics__header--right {
+	text-align: right;
+}
+.first-column {
+	width: 187px;
 }
 .statistics__data {
+	border-bottom: 1px solid #D1CFD7;
 }
 .statistics__data--text {
 }
-.statistics__data--time {
+.statistics__data--text-right {
+	text-align: right;
 }
-.statistics__websites {
+.statistics__data--time {
 }
 .websites {
 }
-.statistics__data--overflow {
-}
-.statistics__discipline {
+.statistics__data--text-overflow {
+	display: block;
+	white-space: nowrap;
+   overflow: hidden;
+	text-overflow: ellipsis;
 }
 .discipline {
 }
