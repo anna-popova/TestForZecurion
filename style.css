@@ -348,6 +348,7 @@ img {
 	padding-top: 8px;
 }
 .analytics__activity {
+	margin-right: 70px;
 }
 .analytics__text {
 	font-weight: 400;
@@ -518,11 +519,13 @@ img {
 .statistics {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	max-width: 1500px;
 	padding-right: 55px;
 	margin: 0 auto;
 }
 .statistics__item {
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -560,9 +563,6 @@ img {
 }
 .statistics__header--center {
 	text-align: center;
-}
-.first-column {
-	width: 187px;
 }
 .statistics__data {
 	padding-top: 4px;
@@ -604,7 +604,6 @@ img {
 .websites {
 }
 .text-overflow {
-	width: 187px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
